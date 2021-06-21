@@ -1,0 +1,40 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class products{
+String name;
+double products;
+int quantity;
+setters()
+getters()
+toStrings()
+}
+
+class JsonFileReader{
+List readFile()
+}
+
+class DoesExist{
+products doesProductExist(List Products, search_value)
+}
+
+class Input{
+String readInput()
+}
+
+class Output{
+printOutput(products product_info)
+}
+
+class main{
+}
+
+JsonFileReader*--products
+main*-- JsonFileReader
+main*-- Input
+main*-- DoesExist
+main*-- Output
+main*-- products
+
+
+@enduml

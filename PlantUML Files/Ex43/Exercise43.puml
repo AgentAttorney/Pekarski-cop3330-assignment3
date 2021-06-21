@@ -1,0 +1,22 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class input
+{
+    String[] takeInput()
+}
+class main
+class FileCreation
+{
+   runMethods(String[] collectInput)
+   makeBaseFolder(String title)
+   makeHTML(String title, String author)
+   boolean convertStringtoBool(String JS_CSS)
+   makeJSorCSS(boolean blJS, boolean blCSS)
+   modifyHTML(File html, String modPath,
+    String title, String author)
+}
+main *-- input
+main *-- FileCreation
+
+@enduml

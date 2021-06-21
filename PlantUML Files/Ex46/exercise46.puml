@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class main{
+}
+
+class fileReader{
+List readFile()
+}
+class ListAnalysis{
+decompose(List)
+}
+class Printer{
+printSortMap(Map)
+}
+class Maps{
+createMap(Map, String)
+displayMap(Map)
+}
+
+main *-- fileReader
+main *-- ListAnalysis
+ListAnalysis *-- Maps
+ListAnalysis *-- Printer
+
+
+@enduml

@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class main{
+}
+
+class ReadFile
+{
+    void FileRead()
+}
+
+ReadFile *-- ManageList
+
+class ManageList
+{
+    void SortList(List Names)
+    void setList(List Names)
+    List getList()
+}
+
+class PrintTheList
+{
+    PrintList(List Names)
+}
+
+ManageList *-- PrintTheList
+main*-- ReadFile
+
+
+
+@enduml

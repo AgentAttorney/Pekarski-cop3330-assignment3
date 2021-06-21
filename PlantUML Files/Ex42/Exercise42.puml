@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class main{
+}
+
+class readFile{
+void FileRead()
+}
+
+class manageList{
+addToList()
+String[][] splitList()
+void callPrinter()
+}
+
+class Printer{
+void formatPrintTheList()
+}
+
+main *-- readFile
+readFile *-- manageList
+manageList *-- Printer
+
+@enduml

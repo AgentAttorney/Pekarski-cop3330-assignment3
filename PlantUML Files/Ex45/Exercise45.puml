@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class main{
+
+}
+class input{
+String returnInput()
+}
+class createFile{
+createOutput(String OutFile)
+}
+class fileRead{
+    Arraylist readFile(String, File)
+}
+class fileWrite{
+    writeFile (File outputFile, List<String> al)
+}
+class wordReplace{
+    Arraylist replaceWord(Arraylist)
+}
+main*-- input
+main *-- createFile
+main *-- fileRead
+main *-- fileWrite
+fileRead *-- wordReplace
+
+@enduml
